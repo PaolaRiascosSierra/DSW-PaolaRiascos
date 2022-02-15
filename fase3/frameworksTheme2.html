@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../sources/css/styles.css">
+    <link rel="import" href="panel.html">
+    <script src="../sources/js/menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class=menu>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=temas>
+                    <a href="#">Temas</a>
+                    <div id=tema class=desplegableTemas>
+                        <a href="cssTheme.html">CSS</a>
+                        <a href="frameworksTheme.html">Frameworks CSS</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=recursos>
+                    <a href="#">Recursos Digitales</a>
+                    <div class=desplegableRecursos>
+                        <a href="cssRecursos.html">Recursos CSS</a>
+                        <a href="frameworksRecursos.html">Recursos Frameworks</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=aprendizaje>
+                    <a href="#">Aprendizaje</a>
+                    <div class=desplegableAprendizaje>
+                        <a href="">Sub Menu 1</a>
+                        <a href="">Sub Menu 2</a>
+                    </div>
+                </li>
+                <li class=aboutMe>
+                    <a href="aboutMe.html">Acerca de Paola Riascos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class=panel>
+            <ul class="tabs">
+                <li onclick=window.location.href='frameworksTheme.html' id=tabItem onclick=activateTab(event)>
+                    <a>Concepto</a>
+                </li>
+                <li onclick=window.location.href='frameworksTheme2.html' id=tabItem onclick=activateTab(event)
+                    class=activated>
+                    <a>Frameworks CSS</a>
+                </li>
+            </ul>
+            <h1>Mejores Frameworks CSS</h1>
+            <div class=temaCss>
+                <div class=infoCss>
+                    <div class=frwCss>
+                        <h3>Tailwind CSS</h3>
+                        <div>
+                            Este Framework es muy personalizable, te permite crear una interfaz de usuario única, te
+                            permite
+                            jugar con los colores, tamaños de borde, tamaño de la fuente, paddings, margenes, sombras y
+                            otros
+                            elementos y propiedades.
+                            <br>
+                            Tailwind CSS se centra en los nombre de clases, se le hará difícil dominarla si no tiene
+                            nociones de
+                            CSS y de la herramienta Atomic CSS y si quieres saber más de este Framework, puedes visitar
+                            su
+                            sitio
+                            web.
+                        </div>
+                        <div class=image>
+                            <img width=300 height=200 src="../sources/images/tailwind.png" alt="">
+                            <span class="caption"><strong>Figura 2.2.2 </strong> - Esquema de Frameworks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=infoCss>
+                    <div class=frwCss>
+                        <h3>Bootstrap</h3>
+                        <div>
+                            Este Framework es uno de los más populares en la actualidad, hasta la fecha de este Post se
+                            encuentra en su versión 4.4.1, cuenta con características muy importantes como esquemas de
+                            color, modificadores, clases útiles para usar formularios, cards, listas, tablas, videos,
+                            carrusel, ventanas modales, tooltips, etc.
+                            <br>
+                            Esta construida sobre SASS y es compatible con LESS y obviamente con SASS, si quieres saber
+                            más de este Framework, puedes visitar su sitio web.
+                        </div>
+                        <div class=image>
+                            <img width=250 height=200 src="../sources/images/bootstrap.png" alt="">
+                            <span class="caption"><strong>Figura 2.2.3 </strong> - Esquema de Frameworks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=infoCss>
+                    <div class=frwCss>
+                        <h3>Foundation</h3>
+                        <div>
+                            Este Framework junto con Bootstrap son uno de los más utilizados en la actualidad,
+                            Foundation es más sofisticado, asimismo es muy flexible y fácil de personalizar. Este
+                            Framework CSS te permite crear aplicaciones y páginas web adaptables a los dispositivos,
+                            empresas como Mozilla, HP, Cisco, eBay, Facebook, Adobe, Disney, entre otras, usan
+                            Foundation.
+                        </div>
+                        <div class=image>
+                            <img width=300 height=200 src="../sources/images/foundation.png" alt="">
+                            <span class="caption"><strong>Figura 2.2.4 </strong> - Esquema de Frameworks</span>
+                        </div>
+                    </div>
+                </div>
+                <div class=infoCss>
+                    <div class=frwCss>
+                        <h3>Pure CSS</h3>
+                        <div>
+                            Este Framework es adaptable a los dispositivos y fue creado por la empresa Yahoo por el año
+                            2014, fue construido sobre la herramienta Normalize CSS. A diferencia de Bootstrap, no
+                            permite crear diseños fijos y es muy ligero, pesa alrededor de 3.5 Kb solamente cuando se
+                            comprime y se minimiza. Este Framework cuenta con menús verticales, horizontales y
+                            desplegables, asimismo con formularios, botones, tablas, etc.
+                        </div>
+                        <div class=image>
+                        <img width=300 height=200 src="../sources/images/pureCss.jpg" alt="">
+                        <span class="caption"><strong>Figura 2.2.5 </strong> - Esquema de Frameworks</span>
+                    </div>
+                    </div>
+                </div>
+                <div class=infoCss>
+                    <div class=frwCss>
+                        <h3>Bulma</h3>
+                        <div>
+                            Este Framework CSS es open source y esta creado para trabajar con el diseño de cajas
+                            flexibles o Flexbox. Bulma es muy ligero, liviano y con soporte para móviles. Cuenta con mas
+                            de 200 mil usuarios hasta la actualidad y se encuentra entre los Frameworks más populares
+                            del área, junto con Bootstrap y Foundation, si quieres saber más de este Framework, puedes
+                            visitar su sitio web.
+                        </div>
+                        <div class=image>
+                            <img width=300 height=200 src="../sources/images/bulma.png" alt="">
+                            <span class="caption"><strong>Figura 2.2.6 </strong> - Esquema de Frameworks</span>
+                        </div>
+                    </div>
+                </div>
+                <span data-test="list-item:bibliography-text" style="font-family: Times New Roman;">N.C. (2020, 28 enero). <i>5 mejores frameworks CSS</i>. Nube colectiva. https://blog.nubecolectiva.com/los-5-mejores-frameworks-css-para-desarrolladores-en-2020/</span>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

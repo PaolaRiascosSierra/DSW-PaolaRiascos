@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../sources/css/styles.css">
+    <link rel="import" href="panel.html">
+    <script src="../sources/js/menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class=menu>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=temas>
+                    <a href="#">Temas</a>
+                    <div id=tema class=desplegableTemas>
+                        <a href="cssTheme.html">CSS</a>
+                        <a href="frameworksTheme.html">Frameworks CSS</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=recursos>
+                    <a href="#">Recursos Digitales</a>
+                    <div class=desplegableRecursos>
+                        <a href="cssRecursos.html">Recursos CSS</a>
+                        <a href="frameworksRecursos.html">Recursos Frameworks</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=aprendizaje>
+                    <a href="#">Aprendizaje</a>
+                    <div class=desplegableAprendizaje>
+                        <a href="">Sub Menu 1</a>
+                        <a href="">Sub Menu 2</a>
+                    </div>
+                </li>
+                <li class=aboutMe>
+                    <a href="aboutMe.html">Acerca de Paola Riascos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class=panel>
+            <ul class="tabs">
+                <li class=activated>
+                    <a href=#>Inicio</a>
+                </li>
+
+            </ul>
+            <h1>Hojas de Estilo en Cascada</h1>
+            <div class=temaCss>
+                <div class=infoCss>
+                    Categoría de CSS, con todo lo que necesitas para aprender las Hojas de Estilo en Cascada.
+                    Manuales,
+                    talleres, maquetación css, preguntas y respuestas y mucho más
+
+                    CSS viene de las iniciales de "Cascading Style Sheets", que traducimos por "Hojas de estilo en
+                    cascada".
+                    Es el segundo lenguaje más esencial para crear páginas web. El primero sería HTML, con el que se
+                    define
+                    el contenido de la página. El segundo CSS, con el que se define la parte de la presentación, es
+                    decir,
+                    cómo deben mostrarse los elementos de la página, su posición, forma, espaciados, colores y en
+                    resumen,
+                    toda la parte estética.
+                </div>
+                <div class=infoCss>
+                    CSS no tiene ningún sentido sin HTML, igual que a día de hoy HTML sin CSS también resultaría
+                    imposible,
+                    ya que la web ha evolucionado de tal forma que su aspecto es fundamental y el CSS es la única
+                    vía
+                    para
+                    conseguir personalizarlo.
+                </div>
+                <div class=image>
+                    <img width=500 height=200 src="../sources/images/cssImage.gif" alt="">
+                    <span class="caption"><strong>Figura 2.1 - </strong> Esquema de la separación de los contenidos</span>
+                </div>
+                <div class=infoCss>
+                    <h3>Para desarrollar con CSS tenemos que trabajar con una serie de elementos, mediante los
+                        cuales se
+                        declaran los estilos, básicamente éstos son los más importantes:</h3>
+
+                    Selectores, mediante los cuales podemos especificar qué elementos de la página nos estamos
+                    refiriendo
+                    Atributos de estilo para definir qué cosas queremos estilizar sobre los selectores indicados
+                    Una serie de valores, que indican qué estilo se debe aplicar a cada atributo sobre cada
+                    selector.
+                    Los
+                    valores se expresan con unidades CSS, que sirven para cuantificar los valores (píxeles,
+                    puntos...)
+
+                    Aprender CSS no es difícil. Básicamente se trata de entender esos componentes principales y
+                    conocer
+                    las
+                    posibles variantes que existen para conseguir los estilos que necesitamos. Por supuesto, también
+                    tiene
+                    una buena parte de creatividad, pero la mayoría de las veces el diseño lo entregan previamente
+                    antes
+                    de
+                    desarrollar una web, por lo que en realidad lo que más requiere es un conocimiento técnico.
+
+                    Cuando se usa profesionalmente CSS se deben tener en cuenta muchos detalles y buenas prácticas,
+                    como
+                    la
+                    organización del código, la reutilización, la optimización, etc. que básicamente están tratados
+                    en
+                    los
+                    manuales y artículos que encontrarás en DesarrolloWeb.
+                </div>
+                </p>
+                <span  data-test="list-item:bibliography-text" style="font-family: Times New Roman"><i>Home de DesarrolloWeb.com</i>. (s. f.). Desarrollo Web. Recuperado 15 de febrero de 2022, de https://desarrolloweb.com/home/css</span>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

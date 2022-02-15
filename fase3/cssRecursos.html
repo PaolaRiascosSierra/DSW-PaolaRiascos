@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../sources/css/styles.css">
+    <link rel="import" href="panel.html">
+    <script src="../sources/js/menu.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class=menu>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=temas>
+                    <a href="#">Temas</a>
+                    <div id=tema class=desplegableTemas>
+                        <a href="cssTheme.html">CSS</a>
+                        <a href="frameworksTheme.html">Frameworks CSS</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=recursos>
+                    <a href="#">Recursos Digitales</a>
+                    <div class=desplegableRecursos>
+                        <a href="cssRecursos.html">Recursos CSS</a>
+                        <a href="frameworksRecursos.html">Recursos Frameworks</a>
+                    </div>
+                </li>
+                <li onclick=activateFn(event) onfocusout=focusOut(event) class=aprendizaje>
+                    <a href="#">Aprendizaje</a>
+                    <div class=desplegableAprendizaje>
+                        <a href="">Sub Menu 1</a>
+                        <a href="">Sub Menu 2</a>
+                    </div>
+                </li>
+                <li class=aboutMe>
+                    <a href="aboutMe.html">Acerca de Paola Riascos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class=panel>
+            <ul class="tabs">
+                <li class=activated>
+                    <a href=#>Inicio</a>
+                </li>
+
+            </ul>
+            <h1>Recursos CSS</h1>
+            <div class=temaCss>
+                <div class=infoCss>
+                    <h3>En el siguiente podcast se hablará un breve repaso a la hostoria de CSS, la importancia de CSS junto con los diseños mas impresionantes que se pueden realizar con el mismo. </h3>
+                    <audio controls>
+                        <source src="../sources/audios/PodcastCSS.m4a">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <h3>En el siguiente video se encontrará un breve tutorial sobre como personalizar una barra de tareas, aplicando estilos CSS
+                    </h3>
+                    <div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/5bc56df0279f4c0bb87ac5ad356ea97d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                    </p>
+                </div>
+            </div>
+
+    </section>
+</body>
+
+</html>
